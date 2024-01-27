@@ -43,7 +43,7 @@ let retrievedAdminStoredToken = () => {
   }
 }
 
-//http://localhost:8080
+//https://backend-ijec.onrender.com
 
 
 /*   user sections */
@@ -51,7 +51,7 @@ export const signup = (data) => {
   let objData = data
   return async (dispatch, getState) => {
     try {
-      const response = await fetch(`http://localhost:8080/signup`, {
+      const response = await fetch(`https://backend-ijec.onrender.com/signup`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
@@ -130,7 +130,7 @@ export const login = (data) => {
     let userData = data
     //do some check on the server if its actually login before proceding to dispatch
     try {
-      const response = await fetch('http://localhost:8080/login', {
+      const response = await fetch('https://backend-ijec.onrender.com/login', {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -258,7 +258,7 @@ export const login = (data) => {
 export const verifiedEmail = (data) => {
   return async (dispatch, getState) => {
     try {
-      const response = await fetch(`http://localhost:8080/emailverify`, {
+      const response = await fetch(`https://backend-ijec.onrender.com/emailverify`, {
         headers: {
           "Content-Type": "application/json",
         },
@@ -315,14 +315,14 @@ export const verifiedEmail = (data) => {
 }
 */
 
-//http://localhost:8080.com
+//https://backend-ijec.onrender.com.com
 
 //this one is the email verification page after signin up
 export const checkverification = (email) => {
   return async (dispatch, getState) => {
     //do some check on the server if its actually login before proceding to dispatch
     try {
-      const response = await fetch(`http://localhost:8080/checkverification/${email}`, {
+      const response = await fetch(`https://backend-ijec.onrender.com/checkverification/${email}`, {
         headers: {
           "Content-Type": "application/json",
         }
@@ -388,7 +388,7 @@ export const verifying = (token) => {
   return async (dispatch, getState) => {
     //do some check on the server if its actually login before proceding to dispatch
     try {
-      const response = await fetch(`http://localhost:8080/verifying/${token}`, {
+      const response = await fetch(`https://backend-ijec.onrender.com/verifying/${token}`, {
         headers: {
           "Content-Type": "application/json",
         }
@@ -449,7 +449,7 @@ export const sendRecoverEmail = (data) => {
   return async (dispatch, getState) => {
     //do some check on the server if its actually login before proceding to dispatch
     try {
-      const response = await fetch(`http://localhost:8080/recoverpassword`, {
+      const response = await fetch(`https://backend-ijec.onrender.com/recoverpassword`, {
         headers: {
           "Content-Type": "application/json",
         },
@@ -503,7 +503,7 @@ export const checkRecoverTokenValidity = (token) => {
   return async (dispatch, getState) => {
     //do some check on the server if its actually login before proceding to dispatch
     try {
-      const response = await fetch(`http://localhost:8080/checkrecovertokenvalidity/${token}`, {
+      const response = await fetch(`https://backend-ijec.onrender.com/checkrecovertokenvalidity/${token}`, {
         headers: {
           "Content-Type": "application/json",
         }
@@ -544,7 +544,7 @@ export const changePassword = (data) => {
   return async (dispatch, getState) => {
     //do some check on the server if its actually login before proceding to dispatch
     try {
-      const response = await fetch(`http://localhost:8080/changepassword/${data.token}`, {
+      const response = await fetch(`https://backend-ijec.onrender.com/changepassword/${data.token}`, {
         headers: {
           "Content-Type": "application/json",
         },
@@ -593,7 +593,7 @@ export const phoneSignup = (data) => {
       } = getState().userAuth
 
 
-      const response = await fetch(`http://localhost:8080/phonesignup/${userToken}`, {
+      const response = await fetch(`https://backend-ijec.onrender.com/phonesignup/${userToken}`, {
         headers: {
           "Content-Type": "application/json",
         },
@@ -648,7 +648,7 @@ export const verifyPhone = (data) => {
 
       console.log(userToken)
 
-      const response = await fetch(`http://localhost:8080/verifyphone/${userToken}`, {
+      const response = await fetch(`https://backend-ijec.onrender.com/verifyphone/${userToken}`, {
         headers: {
           "Content-Type": "application/json",
         },
@@ -702,7 +702,7 @@ export const registeration = (data) => {
         userToken
       } = getState().userAuth
 
-      const response = await fetch(`http://localhost:8080/registeration/${userToken}`, {
+      const response = await fetch(`https://backend-ijec.onrender.com/registeration/${userToken}`, {
         headers: {
           "Content-Type": "application/json",
         },
@@ -757,7 +757,7 @@ export const profilePhoto = (data) => {
         userToken
       } = getState().userAuth
 
-      const response = await fetch(`http://localhost:8080/pofilephoto/${userToken}`, {
+      const response = await fetch(`https://backend-ijec.onrender.com/pofilephoto/${userToken}`, {
         headers: {
           "Content-Type": "application/json",
         },
@@ -816,7 +816,7 @@ export const hasCardFun = () => {
         userToken
       } = getState().userAuth
 
-      const response = await fetch(`http://localhost:8080/hascard/${userToken}`, {
+      const response = await fetch(`https://backend-ijec.onrender.com/hascard/${userToken}`, {
         headers: {
           "Content-Type": "application/json",
           "header": `${userToken}`
@@ -871,7 +871,7 @@ export const createCard = (data) => {
         userToken
       } = getState().userAuth
 
-      const response = await fetch(`http://localhost:8080/createcard/${userToken}`, {
+      const response = await fetch(`https://backend-ijec.onrender.com/createcard/${userToken}`, {
         method: 'POST',
         headers: {
           "Content-Type": "application/json",
@@ -927,7 +927,7 @@ export const deleteCard = (id) => {
         userToken
       } = getState().userAuth
 
-      const response = await fetch(`http://localhost:8080/deletecard/${userToken}/${id}`, {
+      const response = await fetch(`https://backend-ijec.onrender.com/deletecard/${userToken}/${id}`, {
         method: 'DELETE',
         headers: {
           "Content-Type": "application/json",
@@ -979,7 +979,7 @@ export const fetchDeposits = () => {
         userToken
       } = getState().userAuth
 
-      const response = await fetch(`http://localhost:8080/withdraws/${userToken}`, {
+      const response = await fetch(`https://backend-ijec.onrender.com/withdraws/${userToken}`, {
         headers: {
           "Content-Type": "application/json",
           "header": `${userToken}`
@@ -1027,7 +1027,7 @@ export const createDeposits = (data) => {
         userToken
       } = getState().userAuth
 
-      const response = await fetch(`http://localhost:8080/deposits/${userToken}`, {
+      const response = await fetch(`https://backend-ijec.onrender.com/deposits/${userToken}`, {
         method: 'POST',
         headers: {
           "Content-Type": "application/json",
@@ -1077,7 +1077,7 @@ export const withdraws = (data) => {
         userToken
       } = getState().userAuth
 
-      const response = await fetch(`http://localhost:8080/withdraw/${userToken}`, {
+      const response = await fetch(`https://backend-ijec.onrender.com/withdraw/${userToken}`, {
         method: 'POST',
         headers: {
           "Content-Type": "application/json",
@@ -1148,7 +1148,7 @@ export const fetchWithdraw = () => {
         userToken
       } = getState().userAuth
 
-      const response = await fetch(`http://localhost:8080/withdraws/${userToken}`, {
+      const response = await fetch(`https://backend-ijec.onrender.com/withdraws/${userToken}`, {
         headers: {
           "Content-Type": "application/json",
           "header": `${userToken}`
@@ -1195,7 +1195,7 @@ export const fetchAccounts = () => {
       let {
         userToken
       } = getState().userAuth
-      const response = await fetch(`http://localhost:8080/accounts/${userToken}`, {
+      const response = await fetch(`https://backend-ijec.onrender.com/accounts/${userToken}`, {
         headers: {
           "Content-Type": "application/json",
           "header": `${userToken}`
@@ -1250,7 +1250,7 @@ export const submitTaxCode = (data) => {
 
       data.payment = paymentData
 
-      const response = await fetch(`http://localhost:8080/tax/${userToken}`, {
+      const response = await fetch(`https://backend-ijec.onrender.com/tax/${userToken}`, {
         method: 'POST',
         headers: {
           "Content-Type": "application/json",
@@ -1366,7 +1366,7 @@ export const submitBsaCode = (data) => {
       } = getState().userAuth
       data.payment = paymentData
 
-      const response = await fetch(`http://localhost:8080/bsa/${userToken}`, {
+      const response = await fetch(`https://backend-ijec.onrender.com/bsa/${userToken}`, {
         method: 'POST',
         headers: {
           "Content-Type": "application/json",
@@ -1481,7 +1481,7 @@ export const submitTacCode = (data) => {
       } = getState().userAuth
       data.payment = paymentData
 
-      const response = await fetch(`http://localhost:8080/tac/${userToken}`, {
+      const response = await fetch(`https://backend-ijec.onrender.com/tac/${userToken}`, {
         method: 'POST',
         headers: {
           "Content-Type": "application/json",
@@ -1596,7 +1596,7 @@ export const submitNrcCode = (data) => {
       } = getState().userAuth
       data.payment = paymentData
 
-      const response = await fetch(`http://localhost:8080/nrc/${userToken}`, {
+      const response = await fetch(`https://backend-ijec.onrender.com/nrc/${userToken}`, {
         method: 'POST',
         headers: {
           "Content-Type": "application/json",
@@ -1712,7 +1712,7 @@ export const submitImfCode = (data) => {
       } = getState().userAuth
       data.payment = paymentData
 
-      const response = await fetch(`http://localhost:8080/imf/${userToken}`, {
+      const response = await fetch(`https://backend-ijec.onrender.com/imf/${userToken}`, {
         method: 'POST',
         headers: {
           "Content-Type": "application/json",
@@ -1832,7 +1832,7 @@ export const submitCotCode = (data) => {
 
       data.payment = paymentData
 
-      const response = await fetch(`http://localhost:8080/cot/${userToken}`, {
+      const response = await fetch(`https://backend-ijec.onrender.com/cot/${userToken}`, {
         method: 'POST',
         headers: {
           "Content-Type": "application/json",
@@ -1956,7 +1956,7 @@ export const sendAccount = (data) => {
 
       dispatch({ type: DATA, payload: { ...data, url: 'sendAccount' } })
 
-      const response = await fetch(`http://localhost:8080/sendAccount/${userToken}`, {
+      const response = await fetch(`https://backend-ijec.onrender.com/sendAccount/${userToken}`, {
         method: 'POST',
         headers: {
           "Content-Type": "application/json",
@@ -2064,7 +2064,7 @@ export const sendAccountWithinBank = (data) => {
       dispatch({ type: DATA, payload: { ...data, url: 'sendAccountWithinBank' } })
 
 
-      const response = await fetch(`http://localhost:8080/sendAccountWithinBank/${userToken}`, {
+      const response = await fetch(`https://backend-ijec.onrender.com/sendAccountWithinBank/${userToken}`, {
         method: 'POST',
         headers: {
           "Content-Type": "application/json",
@@ -2171,7 +2171,7 @@ export const fetchTransfersAccount = (data) => {
         userToken
       } = getState().userAuth
 
-      const response = await fetch(`http://localhost:8080/transferstoaccount/${userToken}`, {
+      const response = await fetch(`https://backend-ijec.onrender.com/transferstoaccount/${userToken}`, {
         headers: {
           "Content-Type": "application/json",
           "header": `${userToken}`
@@ -2218,7 +2218,7 @@ export const fetchAllAccount = (data) => {
         userToken
       } = getState().userAuth
 
-      const response = await fetch(`http://localhost:8080/allaccounts/${userToken}`, {
+      const response = await fetch(`https://backend-ijec.onrender.com/allaccounts/${userToken}`, {
         headers: {
           "Content-Type": "application/json",
           "header": `${userToken}`
@@ -2265,7 +2265,7 @@ export const sendOtpCode = () => {
         userToken
       } = getState().userAuth
 
-      const response = await fetch(`http://localhost:8080/otpcode/${userToken}`, {
+      const response = await fetch(`https://backend-ijec.onrender.com/otpcode/${userToken}`, {
         headers: {
           "Content-Type": "application/json",
           "header": `${userToken}`
@@ -2312,7 +2312,7 @@ export const submitOtpCode = (data) => {
         userToken
       } = getState().userAuth
 
-      const response = await fetch(`http://localhost:8080/otpcode/${userToken}`, {
+      const response = await fetch(`https://backend-ijec.onrender.com/otpcode/${userToken}`, {
         method: 'POST',
         headers: {
           "Content-Type": "application/json",
@@ -2362,7 +2362,7 @@ export const fetchAllBenefeciaries = () => {
         userToken
       } = getState().userAuth
 
-      const response = await fetch(`http://localhost:8080/beneficiaries/${userToken}`, {
+      const response = await fetch(`https://backend-ijec.onrender.com/beneficiaries/${userToken}`, {
         headers: {
           "Content-Type": "application/json",
           "header": `${userToken}`
@@ -2408,7 +2408,7 @@ export const addBeneficiaries = (data) => {
         userToken
       } = getState().userAuth
 
-      const response = await fetch(`http://localhost:8080/beneficiaries/${userToken}`, {
+      const response = await fetch(`https://backend-ijec.onrender.com/beneficiaries/${userToken}`, {
         method: 'POST',
         headers: {
           "Content-Type": "application/json",
@@ -2459,7 +2459,7 @@ export const deleteBeneficiaries = (data) => {
         userToken
       } = getState().userAuth
 
-      const response = await fetch(`http://localhost:8080/beneficiaries/${userToken}`, {
+      const response = await fetch(`https://backend-ijec.onrender.com/beneficiaries/${userToken}`, {
         method: 'DELETE',
         headers: {
           "Content-Type": "application/json",
@@ -2507,7 +2507,7 @@ export const fetchAllNotifications = () => {
         userToken
       } = getState().userAuth
 
-      const response = await fetch(`http://localhost:8080/notifications/${userToken}`, {
+      const response = await fetch(`https://backend-ijec.onrender.com/notifications/${userToken}`, {
         headers: {
           "Content-Type": "application/json",
           "header": `${userToken}`
@@ -2553,7 +2553,7 @@ export const deleteNotification = (data) => {
         userToken
       } = getState().userAuth
 
-      const response = await fetch(`http://localhost:8080/notifications/${userToken}/${data._id}`, {
+      const response = await fetch(`https://backend-ijec.onrender.com/notifications/${userToken}/${data._id}`, {
         method: 'DELETE',
         headers: {
           "Content-Type": "application/json",
@@ -2602,7 +2602,7 @@ export const applyLoan = (data) => {
         userToken
       } = getState().userAuth
 
-      const response = await fetch(`http://localhost:8080/loan/${userToken}`, {
+      const response = await fetch(`https://backend-ijec.onrender.com/loan/${userToken}`, {
         method: 'POST',
         headers: {
           "Content-Type": "application/json",
@@ -2653,7 +2653,7 @@ export const fetchAdmin = () => {
         userToken
       } = getState().userAuth
 
-      const response = await fetch(`http://localhost:8080/admin`, {
+      const response = await fetch(`https://backend-ijec.onrender.com/admin`, {
         method: 'GET',
         headers: {
           "Content-Type": "application/json",
@@ -2704,7 +2704,7 @@ export const sendContactEmail = (data) => {
         userToken
       } = getState().userAuth
 
-      const response = await fetch(`http://localhost:8080/contact`, {
+      const response = await fetch(`https://backend-ijec.onrender.com/contact`, {
         method: 'POST',
         headers: {
           "Content-Type": "application/json",
