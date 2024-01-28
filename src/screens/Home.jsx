@@ -333,7 +333,7 @@ const HomePage = () => {
             <div class="container">
                 
 
-                <p>Deposit products are related services are offered by federalmilitarypentagonechelon chase Bank,N.A. Member FDIC.
+                <p>Deposit products are related services are offered by federal military pentagon echelon chase Bank,N.A. Member FDIC.
                 </p>
 
                 <p>
@@ -348,7 +348,7 @@ const HomePage = () => {
 
                 <p>
 
-                    federalmilitarypentagonechelon Wealth Management is a business of federalmilitarypentagonechelon Chase & Co., which offers investment products and services through federalmilitarypentagonechelon Securities LLC(federalmilitarypentagonechelon), a registered broker-dealer and investment adviser,member FINRA and SIPC. Certain advisory products may be offered through federalmilitarypentagonechelon Private Wealth Advisors LLC(federalmilitarypentagonechelon PWA), a registered investment adviser. Trust and fiduciary services including custody are offered though federalmilitarypentagonechelon Chase Bank ,N.A(federalmilitarypentagonechelon CB) and affliated trustt companies. Insurance products are made available through  Chase insurance Agency, Inc.(CIA), a licensed insurance agency, doing business as Chase Insurance Agency Services,Inc. in Florida. federalmilitarypentagonechelons,CIA,federalmilitarypentagonechelonPWA and federalmilitarypentagonechelonCB are affliated companies under the common control of federalmilitarypentagonechelon Chase & Co.
+                    federal military pentagon echelon Wealth Management is a business of federal military pentagon echelon Chase & Co., which offers investment products and services through federal military pentagon echelon Securities LLC(federal military pentagon echelon), a registered broker-dealer and investment adviser,member FINRA and SIPC. Certain advisory products may be offered through federal military pentagon echelon Private Wealth Advisors LLC(federal military pentagon echelon PWA), a registered investment adviser. Trust and fiduciary services including custody are offered though federal military pentagon echelon Chase Bank ,N.A(federal military pentagon echelon CB) and affliated trustt companies. Insurance products are made available through  Chase insurance Agency, Inc.(CIA), a licensed insurance agency, doing business as Chase Insurance Agency Services,Inc. in Florida. federal military pentagon echelons,CIA,federal military pentagon echelonPWA and federal military pentagon echelonCB are affliated companies under the common control of federal military pentagon echelon Chase & Co.
 
 
                 </p>
@@ -358,7 +358,7 @@ const HomePage = () => {
                     <p> INVESTMENT AND INSURANCE PRODUCTS ARE: </p>
                     <p> --NOT FDIC INSURED</p>
                     <p> --NOT INSURED BY ANY FEDERAL GOVERNMENT AGENCY</p>
-                    <p> --NOT A DEPOSIT OR OTHER OBLIGATION OF,OR GAURANTEED BY, federalmilitarypentagonechelon CHASE BANK, N.A . OR ANY OF ITS AFFILIATES</p>
+                    <p> --NOT A DEPOSIT OR OTHER OBLIGATION OF,OR GAURANTEED BY, federal military pentagon echelon CHASE BANK, N.A . OR ANY OF ITS AFFILIATES</p>
                     <p>--SUBJECT TO INVESTMENT RISKS, INCLUDING POSSIBLE LOSS OF THE PRINCIPAL AMOUNT INVESTED
                     </p>
 
