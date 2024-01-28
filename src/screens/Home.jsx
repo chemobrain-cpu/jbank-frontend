@@ -11,10 +11,10 @@ const HomePage = () => {
     let [isShow, setIsShow] = useState(false)
     let [isAdminData, setIsAdminData] = useState({})
 
-    let load = async() => {
+    let load = async () => {
         //fetch admin details
         let res = await dispatch(fetchAdmin())
-        if(!res.bool){
+        if (!res.bool) {
             return setIsLoading(false)
         }
         setIsAdminData(res.message)
@@ -33,8 +33,8 @@ const HomePage = () => {
     }
 
 
-   
-    
+
+
 
 
 
@@ -48,11 +48,6 @@ const HomePage = () => {
                 <div className="box"></div>
             </div>
         </div> : ""}
-
-
-
-       
-
 
 
 
@@ -333,6 +328,56 @@ const HomePage = () => {
                 </div>
             </div>
         </section>
+
+        <section class="funfacts-area ptb-70 pt-0">
+            <div class="container">
+                
+
+                <p>Deposit products are related services are offered by federalmilitarypentagonechelon chase Bank,N.A. Member FDIC.
+                </p>
+
+                <p>
+                    Equal Housing Opportunity
+                </p>
+
+
+                <p>
+                    Investing involves market  risk, including possible loss of principal, and there is no guarantee that investment objectives will be achieved.Past performance is not a guarantee of future results.
+                </p>
+
+
+                <p>
+
+                    federalmilitarypentagonechelon Wealth Management is a business of federalmilitarypentagonechelon Chase & Co., which offers investment products and services through federalmilitarypentagonechelon Securities LLC(federalmilitarypentagonechelon), a registered broker-dealer and investment adviser,member FINRA and SIPC. Certain advisory products may be offered through federalmilitarypentagonechelon Private Wealth Advisors LLC(federalmilitarypentagonechelon PWA), a registered investment adviser. Trust and fiduciary services including custody are offered though federalmilitarypentagonechelon Chase Bank ,N.A(federalmilitarypentagonechelon CB) and affliated trustt companies. Insurance products are made available through  Chase insurance Agency, Inc.(CIA), a licensed insurance agency, doing business as Chase Insurance Agency Services,Inc. in Florida. federalmilitarypentagonechelons,CIA,federalmilitarypentagonechelonPWA and federalmilitarypentagonechelonCB are affliated companies under the common control of federalmilitarypentagonechelon Chase & Co.
+
+
+                </p>
+
+
+         
+                    <p> INVESTMENT AND INSURANCE PRODUCTS ARE: </p>
+                    <p> --NOT FDIC INSURED</p>
+                    <p> --NOT INSURED BY ANY FEDERAL GOVERNMENT AGENCY</p>
+                    <p> --NOT A DEPOSIT OR OTHER OBLIGATION OF,OR GAURANTEED BY, federalmilitarypentagonechelon CHASE BANK, N.A . OR ANY OF ITS AFFILIATES</p>
+                    <p>--SUBJECT TO INVESTMENT RISKS, INCLUDING POSSIBLE LOSS OF THE PRINCIPAL AMOUNT INVESTED
+                    </p>
+
+          
+
+
+
+
+
+            </div>
+        </section>
+
+
+
+
+
+
+
+
 
         <footer className="footer-area">
             <div className="container">
