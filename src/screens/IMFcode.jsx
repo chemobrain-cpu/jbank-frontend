@@ -113,6 +113,10 @@ function IMFCode() {
                                 <input placeholder='Enter imf code' onChange={(e) => onChangeHandler('imfCode', e.target.value)} value={imfCode} required />
 
                                 <button>submit</button>
+                                <div className={styles.navigatorContainer}>
+                                    <p onClick={()=> navigate('/dashboard')}>home</p>
+                                    <p onClick={()=> navigate(-1)}>previous</p>
+                                </div>
                             </div>
                         </form>
                     </div>

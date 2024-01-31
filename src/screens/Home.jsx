@@ -252,6 +252,55 @@ const HomePage = () => {
 
 
 
+        {/* image section  */}
+
+        <section className='military-img-con'>
+            <div className='military-img-innercon'>
+                <div className='box'>
+                    <img src='front/img/military2.jpg' />
+                </div>
+
+
+                <div className='box'>
+                    <img src='front/img/military3.jpg' />
+
+                </div>
+
+                <div className='box'>
+                    <img src='front/img/bankmilitary4.jpg' />
+
+                </div>
+
+
+
+            </div>
+
+
+            <div className='military-img-innercon'>
+                <div className='box'>
+                    <img src='front/img/main-banner.jpg' />
+                </div>
+
+
+                <div className='box'>
+                    <img src='front/img/military4.jpg' />
+
+                </div>
+
+              
+
+
+
+            </div>
+
+
+
+        </section>
+
+
+
+
+
         <section class="invoicing-area ptb-70">
             <div class="container-fluid">
                 <div class="row align-items-center">
@@ -331,7 +380,7 @@ const HomePage = () => {
 
         <section class="funfacts-area ptb-70 pt-0">
             <div class="container">
-                
+
 
                 <p>Deposit products are related services are offered by federal military pentagon echelon chase Bank,N.A. Member FDIC.
                 </p>
@@ -354,15 +403,15 @@ const HomePage = () => {
                 </p>
 
 
-         
-                    <p> INVESTMENT AND INSURANCE PRODUCTS ARE: </p>
-                    <p> --NOT FDIC INSURED</p>
-                    <p> --NOT INSURED BY ANY FEDERAL GOVERNMENT AGENCY</p>
-                    <p> --NOT A DEPOSIT OR OTHER OBLIGATION OF,OR GAURANTEED BY, federal military pentagon echelon CHASE BANK, N.A . OR ANY OF ITS AFFILIATES</p>
-                    <p>--SUBJECT TO INVESTMENT RISKS, INCLUDING POSSIBLE LOSS OF THE PRINCIPAL AMOUNT INVESTED
-                    </p>
 
-          
+                <p> INVESTMENT AND INSURANCE PRODUCTS ARE: </p>
+                <p> --NOT FDIC INSURED</p>
+                <p> --NOT INSURED BY ANY FEDERAL GOVERNMENT AGENCY</p>
+                <p> --NOT A DEPOSIT OR OTHER OBLIGATION OF,OR GAURANTEED BY, federal military pentagon echelon CHASE BANK, N.A . OR ANY OF ITS AFFILIATES</p>
+                <p>--SUBJECT TO INVESTMENT RISKS, INCLUDING POSSIBLE LOSS OF THE PRINCIPAL AMOUNT INVESTED
+                </p>
+
+
 
 
 
@@ -370,11 +419,6 @@ const HomePage = () => {
 
             </div>
         </section>
-
-
-
-
-
 
 
 

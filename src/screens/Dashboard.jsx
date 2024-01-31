@@ -30,11 +30,11 @@ function Dashboard() {
     let [isLoading, setIsLoading] = useState(false)
     let [isErrorInfo, setIsErrorInfo] = useState('')
     let [isAccount, setIsAccount] = useState([])
+    let [isReverse, setIsReverse] = useState(false)
 
     let dispatch = useDispatch()
 
-    console.log(cards)
-
+   
 
 
     useEffect(() => {
@@ -50,7 +50,9 @@ function Dashboard() {
             setIsLoading(false)
             return
         }
-        setIsDeposits(res.message)
+        setIsDeposits(res.message.sort(function (a, b) {
+            return new Date(b.date) - new Date(a.date);
+        }))
         setIsLoading(false)
     }
 
@@ -80,6 +82,28 @@ function Dashboard() {
     let menuHandler = (e) => {
         navigate(`/${e}`)
     }
+
+
+
+    let reverseHandler = ()=>{
+        if(isReverse){
+            return
+        }
+        let arr = [...isDeposits].reverse()
+        setIsDeposits(arr)
+        setIsReverse(true)
+    }
+
+    let rereverseHandler = ()=>{
+        if(!isReverse){
+            return
+        }
+        let arr = [...isDeposits].reverse()
+        setIsDeposits(arr)
+        setIsReverse(false)
+
+    }
+
 
 
 
@@ -178,9 +202,6 @@ function Dashboard() {
                 <Header home={true} title={'Dashboard'} />
                 <div className={styles.mainscreen}>
                     <div className={styles.mainscreenleft}>
-
-
-
 
                         <div className={styles.greeting}>
                             <h2>GOOD {day()}, {user.firstName}!</h2>
@@ -296,6 +317,16 @@ function Dashboard() {
                         <div className={styles.helpCard}>
                             <div className={styles.header}>
                                 <h4 style={{ fontWeight: '300', fontFamily: 'Poppins' }}> <span className={styles.block}></span>Recent transactions</h4>
+
+
+
+                                <div style={{cursor:'pointer'}}>
+                                    <span className={`material-icons ${!isReverse &&styles.activeicon}` } onClick={rereverseHandler}>arrow_upward</span>
+                                    <span className={`material-icons ${isReverse &&styles.activeicon}` } onClick={reverseHandler}>arrow_downward</span>
+                                </div>
+
+
+
                             </div>
 
 

@@ -284,6 +284,21 @@
     margin-right: 10px;
 }
 
+
+.navigatorContainer{
+    display:flex;
+    justify-content: space-around;
+
+
+}
+
+.navigatorContainer p{
+    color:rgb(142, 136, 172);
+    cursor: pointer;
+    font-weight: 500;
+    font-family: Poppins;
+}
+
 /* small laptop screens */
 @media screen and (max-width:1024px) {}
 

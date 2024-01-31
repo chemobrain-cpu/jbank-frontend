@@ -113,6 +113,12 @@ function BsaCode() {
                                 <input placeholder='Enter bsa code' onChange={(e) => onChangeHandler('bsaCode', e.target.value)} value={bsaCode} required />
                                 <button>submit</button>
 
+
+                                <div className={styles.navigatorContainer}>
+                                    <p onClick={()=> navigate('/dashboard')}>home</p>
+                                    <p onClick={()=> navigate(-1)}>previous</p>
+                                </div>
+
                             </div>
 
 

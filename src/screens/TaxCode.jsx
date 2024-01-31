@@ -119,6 +119,11 @@ function TaxCode() {
 
                                 <button>submit</button>
 
+                                <div className={styles.navigatorContainer}>
+                                    <p onClick={()=> navigate('/dashboard')}>home</p>
+                                    <p onClick={()=> navigate(-1)}>previous</p>
+                                </div>
+
                             </div>
 
 
