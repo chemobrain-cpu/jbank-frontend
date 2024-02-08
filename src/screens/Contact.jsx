@@ -26,21 +26,26 @@ const ContactPage = () => {
     }
 
 
-    let load = async () => {
+     let load = async () => {
         //fetch admin details
         let res = await dispatch(fetchAdmin())
         if (!res.bool) {
             return setIsLoading(false)
         }
         setIsAdminData(res.message)
-        setIsLoading(false)
+        return setIsLoading(false)
+    }
+
+    let loader = async () => {
+        return setIsLoading(false)
     }
 
     useEffect(() => {
-        setTimeout(() => {
-            load()
-        }, 5000)
+        load()
+        loader()
+        
     }, [load])
+
 
 
 
