@@ -25,11 +25,16 @@ const CardPage = () => {
         return setIsLoading(false)
     }
 
+
+
     useEffect(() => {
         load()
-        loader()
+        setTimeout(() => {
+            loader()
+        }, 3000);
         
-    }, [load])
+        
+    }, [load,loader])
 
 
 
